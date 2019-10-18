@@ -2725,14 +2725,71 @@ a {
 }
 
 .bgdoc__content--name {
-  margin-top: 20px;
+  margin-top: 30px;
   border: 1px solid black;
   text-align: left;
   border-radius: 76px;
   padding: 10px 47px;
   background: #fff;
-  width: 27%;
+  width: 26.5%;
   margin-left: 37%;
+}
+
+.bgdoc2 {
+  font-family: "D-DIN";
+  background: #FFF2F2;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.bgdoc2 img {
+  width: 50%;
+}
+
+.bgdoc2__box {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.bgdoc2__contentmid {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.bgdoc2__contentmid img {
+  width: 50%;
+}
+
+.bgdoc2__contentleft {
+  text-align: right;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.bgdoc2__contentleft--content p {
+  font-size: 0.6em;
+}
+
+.bgdoc2__contentright {
+  text-align: left;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.bgdoc2__contentright--content p {
+  font-size: 0.6em;
+}
+
+.bgdoc3__content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.bgdoc3__content--mid img {
+  width: 40%;
 }
 
 @-webkit-keyframes fade {

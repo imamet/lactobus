@@ -548,12 +548,9 @@
                 }
             }
             &--desc {
-                // border: 1px solid black;
                 background: #fff;
                 padding: 40px;
                 border-radius: 81px;
-                // border-style: double;
-                // border-width: 9px;
                 border: 1px solid black;
                 position: relative;
                 margin: 0 auto;
@@ -574,14 +571,73 @@
                 }
             }
             &--name {
-                margin-top: 20px;
+                margin-top: 30px;
                 border: 1px solid black;
                 text-align: left;
                 border-radius: 76px;
                 padding: 10px 47px;
                 background: #fff;
-                width: 27%;
+                width: 26.5%;
                 margin-left: 37%;
             }
+        }
+    }
+
+    .bgdoc2{
+        font-family: $font_03;
+        background: #FFF2F2;
+        text-align:center;
+        padding-top: 10px;
+        padding-bottom:10px;
+        img{
+            width: 50%;
+        }
+        &__box{
+            padding-top:50px;
+            padding-bottom:30px;
+        }
+        &__contentmid{
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.4em;
+            img{
+                width:50%;
+            }
+        }
+        &__contentleft{
+            text-align: right;
+            font-weight: bold;
+            font-size: 2em;
+            &--content{
+                p{
+                    font-size: 0.6em;
+                }
+                
+            }
+        }
+        &__contentright{
+            text-align: left;
+            font-weight: bold;
+            font-size: 2em;
+            &--content{
+                p{
+                    font-size: 0.6em;
+                    
+                }
+                
+            }
+        }
+    }
+
+    .bgdoc3{
+        &__content{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+        &--mid{
+            img{
+                width: 40%;
+            }
+        }
         }
     }
