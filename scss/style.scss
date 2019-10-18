@@ -1,0 +1,27 @@
+/*=================================================================
+    Company      : Digital Advertising Division - Kompas.com
+    Document     : CSS
+    Author       : Muhamad Ambrikom Tidar
+    Project Name : Visual Interaktif Premium | Kompas.com - Freeport
+    Year		 : 2018=9
+=================================================================*/
+
+// base sass, mixin + variable
+@import 'base';
+
+// global
+@import 'reset';
+@import 'grid';
+@import 'fontface';
+@import 'utilities';
+@import 'preloader';
+
+// main
+@import 'main';
+@import 'animation';
+
+// header
+@import 'header';
+
+// footer
+@import 'footer';
