@@ -1286,6 +1286,13 @@ img {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'ZCOOLXiaoWei-Regular';
+  src: url("../fonts/ZCOOLXiaoWei-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS Utilities CSS Documentation:
 ----------------------------------------------------------------
@@ -2250,6 +2257,7 @@ a {
 
 .bg3__item {
   font-size: 23px;
+  margin-top: 19%;
 }
 
 .bg3__item li {
@@ -2283,23 +2291,58 @@ a {
   font-weight: bold;
 }
 
+.bg3__item--title1 {
+  text-align: right;
+  color: #7C1315;
+  width: 50%;
+  margin-left: 50%;
+}
+
+.bg3__item--title1 p {
+  border: 1px solid #7C1315;
+  border-radius: 30px;
+  padding: 5px 15px;
+  font-weight: bold;
+}
+
 .bg3__item1 {
   margin-left: 5%;
   font-size: 23px;
+  margin-top: 19%;
 }
 
 .bg3__item3 {
+  font-size: 23px;
+  text-align: center;
+}
+
+.bg3__item3 p {
+  line-height: 1.1;
+}
+
+.bg3__item3--title {
+  color: #7C1315;
+  width: 24%;
+  text-align: center;
   left: 0;
   right: 0;
   margin: auto;
 }
 
+.bg3__item3--title p {
+  border: 1px solid #7C1315;
+  border-radius: 30px;
+  padding: 5px 15px;
+  font-weight: bold;
+}
+
 .list {
-  background: #7C1315;
+  background: #8E1A35;
   color: #fff;
-  font-size: 36px;
+  font-size: 25px;
   text-align: center;
   font-family: "D-DIN";
+  padding-top: 15px;
 }
 
 .list p {
@@ -2561,6 +2604,135 @@ a {
 
 .bg7__desc--logo {
   margin-top: 5%;
+}
+
+.cover2 {
+  position: relative;
+  background: url(../images/section2/cover1.jpg) no-repeat top center;
+  background-size: 100%;
+  height: 100vh;
+  width: 100%;
+}
+
+.cover2__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 28%;
+  z-index: 2;
+  background: rgba(241, 239, 217, 0);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(241, 239, 217, 0)), color-stop(100%, #94002d));
+  /* background: -webkit-gradient(linear, left top, left bottom, from(rgba(241, 239, 217, 0)), to(#94002d)); */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(241, 239, 217, 0)), to(#b31d4a));
+  background: linear-gradient(to bottom, rgba(241, 239, 217, 0) 0%, #b31d4a 100%);
+}
+
+.cover2__title {
+  position: absolute;
+  top: 10%;
+}
+
+.cover2__title--1 {
+  font-family: "amandasignature";
+  color: #94002d;
+  font-size: 8em;
+  width: 100%;
+  margin-bottom: -93px;
+}
+
+.cover2__title--2 {
+  font-family: "ZCOOLXiaoWei-Regular";
+  color: #94002d;
+  font-size: 5.5em;
+  width: 100%;
+}
+
+.cover2__title--3 {
+  margin-top: -3px;
+  font-family: "D-DIN";
+  font-size: 1.3em;
+  width: 35%;
+  font-weight: 600;
+}
+
+.cover2__title--4 {
+  font-size: 0.5em;
+}
+
+.cover2__title--5 {
+  margin-bottom: -7px;
+}
+
+.bgdoc {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.bgdoc__overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  position: absolute;
+  background: #94002d;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #94002d), color-stop(100%, rgba(241, 239, 217, 0)));
+  /* background: -webkit-gradient(linear, left top, left bottom, from(#94002d), to(rgba(241, 239, 217, 0))); */
+  background: -webkit-gradient(linear, left top, left bottom, from(#b31d4a), to(rgba(241, 239, 217, 0)));
+  background: linear-gradient(to bottom, #b31d4a 0%, rgba(241, 239, 217, 0) 100%);
+}
+
+.bgdoc__content {
+  text-align: center;
+  z-index: 5;
+  padding-top: 50px;
+}
+
+.bgdoc__content--foto {
+  z-index: 5;
+}
+
+.bgdoc__content--foto img {
+  width: 20%;
+}
+
+.bgdoc__content--desc {
+  background: #fff;
+  padding: 40px;
+  border-radius: 81px;
+  border: 1px solid black;
+  position: relative;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+
+.bgdoc__content--desc::before {
+  background: none;
+  border: 1px solid black;
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 81px;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.bgdoc__content--name {
+  margin-top: 20px;
+  border: 1px solid black;
+  text-align: left;
+  border-radius: 76px;
+  padding: 10px 47px;
+  background: #fff;
+  width: 27%;
+  margin-left: 37%;
 }
 
 @-webkit-keyframes fade {
