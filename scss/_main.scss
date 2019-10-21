@@ -2250,3 +2250,23 @@
         }
     }
 }
+
+.tooltiptext {
+    visibility: hidden;
+    width: 262px;
+    background-color: #f1d8df;
+    color: #8E1A35;
+    border-radius: 6px;
+    padding: 10px;
+    left: 0;
+    position: absolute;
+    z-index: 3;
+    line-height: 1.4em;
+    @include max-responsive($sm) {
+        display: none;
+    }
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
