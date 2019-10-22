@@ -436,6 +436,7 @@
         font-family: $font_03;
         font-weight: bold;
         font-size: 20px;
+        position: relative;
         p {
             background: #8E1A35;
             color: #fff;
@@ -446,8 +447,18 @@
         &--1 {
             width: 34%;
             margin-left: 19%;
+            position: relative;
+            text-align: center;
+            &--panah {
+                position: absolute;
+                top: -15%;
+                right: -6%;
+                z-index: 5;
+            }
         }
         &--2 {
+            position: relative;
+            text-align: center;
             width: 71%;
             margin-left: 19%;
         }
@@ -1535,6 +1546,28 @@
     }
 }
 
+.swap-on-hover {
+    position: relative;
+    margin: 0 auto;
+}
+
+.swap-on-hover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.swap-on-hover .swap-on-hover__front-image {
+    z-index: 1;
+    transition: opacity .5s linear;
+    cursor: pointer;
+}
+
+.swap-on-hover:hover>.swap-on-hover__front-image {
+    opacity: 0;
+}
+
 .section1 {
     background: #f1d8df;
     &__title {
@@ -1546,14 +1579,21 @@
         }
     }
     &__canvas {
-        padding-bottom: 25%;
+        padding-bottom: 15%;
         &--1 {
+            position: relative;
             text-align: center;
             img {
                 @include max-responsive($sm) {
                     width: 60%;
                     margin-bottom: 50%;
                 }
+            }
+            &--panah {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 50px;
             }
         }
         &--2 {
@@ -2253,7 +2293,9 @@
 
 .tooltiptext {
     visibility: hidden;
-    width: 262px;
+    font-family: $font_03;
+    font-size: 1.2em;
+    width: 160px;
     background-color: #f1d8df;
     color: #8E1A35;
     border-radius: 6px;
