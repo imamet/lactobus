@@ -2,22 +2,22 @@
     --color-text: #fff;
     --color-bg: #333;
     --color-link: #1b198c;
-    --color-link-hover: #d3eaa2;
+    --color-link-hover: #F998B7;
     --color-info: #fff;
-    --color-main-bg: #3735d0;
-    --path-fill-1: #241e84;
-    --path-fill-2: #d3eaa2;
+    --color-main-bg: #e49cad;
+    --path-fill-1: #e49cad;
+    --path-fill-2: #8e1a35;
     --color-title: #fff;
     --font-family-title: 'Pompiere', serif;
     --font-size-title: 6vmax;
     --font-weight-title: 300;
-    --color-menu: #3735d0;
-    --color-menu-hover: #b2dc53;
+    --color-menu: #fff;
+    --color-menu-hover: #F998B7;
     --font-family-menu: var(--font-family-title);
     --font-size-menu: 4vmax;
     --font-weight-menu: 300;
-    --button-bg: #b3dc53;
-    --button-circle: #1b198b;
+    --button-bg: #8e1a35;
+    --button-circle: #e49cad;
     --button-line: #fff;
 }
 
