@@ -520,6 +520,13 @@ a {
         @include max-responsive($sm) {
             padding: 2px 0px;
         }
+        &--answer {
+            text-align: center;
+            color: #fff;
+            font-family: $font_03;
+            font-size: 2em;
+            padding-top: 5%;
+        }
         &--title {
             text-align: center;
             p {
@@ -743,6 +750,172 @@ a {
     }
 }
 
+.modal3 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    border: 1px solid #fff;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    @-webkit-keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0
+        }
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+    @keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0
+        }
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+    @include max-responsive($sm) {
+        padding-top: 130px;
+    }
+    &__content {
+        position: relative;
+        background-color: #DBBAC4;
+        color: black;
+        margin: auto;
+        border: 1px solid #888;
+        width: 90%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+        @include max-responsive($sm) {
+            width: 97%;
+            top: -8%;
+            padding: 30px;
+        }
+    }
+    &__header {
+        padding: 2px 40px;
+        background-color: #fff;
+        color: white;
+        @include max-responsive($sm) {
+            margin-top: 30%;
+        }
+    }
+    &__body {
+        padding: 100px 135px;
+        font-family: $font_03;
+        @include max-responsive($sm) {
+            padding: 2px 0px;
+        }
+        &--title {
+            text-align: center;
+            p {
+                font-size: 2em;
+            }
+        }
+        &--content {
+            text-align: center;
+            font-size: 1.3em;
+            &--1 {
+                color: #8E1A35;
+                font-weight: bold;
+                font-size: 2em;
+            }
+            @include max-responsive($sm) {
+                margin-top: 5%;
+            }
+        }
+        &--content1 {
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 100%;
+            font-size: 1.3em;
+            padding-bottom: 15%;
+            &--1 {
+                width: 50%;
+                float: left;
+                @include max-responsive($sm) {
+                    width: 100%;
+                    float: none;
+                }
+                img {
+                    width: 30%;
+                    float: right;
+                    @include max-responsive($sm) {
+                        width: 70%;
+                        float: none;
+                        text-align: center;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                    }
+                }
+            }
+            &--2 {
+                &--a {
+                    @include max-responsive($sm) {
+                        width: 100%;
+                    }
+                    width: 70%;
+                    border-top: 1px solid #7EAEB5;
+                    border-bottom: 1px solid #7EAEB5;
+                }
+                padding: 5% 7%;
+                width: 50%;
+                float: left;
+                @include max-responsive($sm) {
+                    width: 100%;
+                    float: none;
+                }
+            }
+        }
+    }
+    &__close {
+        color: white;
+        right: 2%;
+        top: 2%;
+        padding: 0px 9px;
+        position: absolute;
+        background: #700823;
+        border-radius: 50%;
+        p {
+            font-size: 18px;
+            line-height: 1.9em;
+            padding: 10px;
+            margin: 0;
+            line-height: 1.6em;
+        }
+        img {
+            width: 77%;
+        }
+        &:hover,
+         :focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            background: #fff;
+        }
+        @include max-responsive($sm) {
+            margin-top: 0.5%;
+        }
+    }
+    &__break {
+        border-bottom: 1px solid #fff;
+        margin: 20px auto;
+    }
+}
+
 .modal-scrollbar-measure {
     position: absolute;
     top: -9999px;
@@ -787,20 +960,101 @@ a {
     clear: both;
 }
 
+button {
+    color: #fff;
+    background: #fff;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    color: black;
+    padding: 0.3rem 2rem;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    letter-spacing: 2px;
+    font-family: $font_03;
+    margin-bottom: 5%;
+}
+
+.button-jittery button {
+    animation: jittery 4s infinite;
+    &:hover {
+        animation: heartbeat 0.2s infinite;
+    }
+}
+
+.botton01 {
+    text-align: center;
+    padding-top: 2%;
+    @include max-responsive($sm) {
+        padding-top: 25%;
+        padding-bottom: 3%;
+    }
+    text-align: center;
+    padding-top: 2%;
+    button {
+        color: #fff;
+        background: #8E1A35;
+        border: 3px solid #fff;
+        border-radius: 50px;
+        padding: 0.3rem 2rem;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        -webkit-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
+        letter-spacing: 2px;
+        font-family: $font_03;
+        margin-bottom: 5%;
+        color: #fff;
+    }
+}
+
+@keyframes jittery {
+    5%,
+    50% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(0.9);
+    }
+    15% {
+        transform: scale(1.15);
+    }
+    20% {
+        transform: scale(1.15) rotate(-5deg);
+    }
+    25% {
+        transform: scale(1.15) rotate(5deg);
+    }
+    30% {
+        transform: scale(1.15) rotate(-3deg);
+    }
+    35% {
+        transform: scale(1.15) rotate(2deg);
+    }
+    40% {
+        transform: scale(1.15) rotate(0);
+    }
+}
+
 // 4.4 Back to top
 .backtop {
     position: fixed;
     bottom: 10px;
     right: 5px;
-    z-index: 9999;
-    opacity: 0;
+    z-index: 1000;
+    display: none;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
     @include transition(0.4s);
     @include min-responsive($sm) {
         bottom: 25px;
         right: 15px;
     }
     span {
-        color: $white;
+        color: black;
         font-size: 11px;
         text-align: center;
         margin-bottom: 5px;
