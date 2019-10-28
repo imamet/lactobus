@@ -66,6 +66,114 @@ $(document).ready(function() {
         $(".frameModal6").fadeOut(300);
     });
 
+    // modal page2
+    // 01
+    $(".right__click01").click(function() {
+        $(".frameModal01").fadeIn(300);
+    });
+
+    $(".modal1__close").click(function() {
+        $(".frameModal01").fadeOut(300);
+    });
+    // 02
+    $(".right__click02").click(function() {
+        $(".frameModal02").fadeIn(300);
+    });
+
+    $(".modal1__close").click(function() {
+        $(".frameModal02").fadeOut(300);
+    });
+    // 03
+    $(".right__click03").click(function() {
+        $(".frameModal03").fadeIn(300);
+    });
+
+    $(".modal1__close").click(function() {
+        $(".frameModal03").fadeOut(300);
+    });
+    // 04
+    $(".right__click04").click(function() {
+        $(".frameModal04").fadeIn(300);
+    });
+
+    $(".modal1__close").click(function() {
+        $(".frameModal04").fadeOut(300);
+    });
+    // 05
+    $(".right__click05").click(function() {
+        $(".frameModal05").fadeIn(300);
+    });
+
+    $(".modal1__close").click(function() {
+        $(".frameModal05").fadeOut(300);
+    });
+    // 06
+    $(".right__click06").click(function() {
+        $(".frameModal06").fadeIn(300);
+    });
+
+    $(".modal1__close").click(function() {
+        $(".frameModal06").fadeOut(300);
+    });
+    // 07
+    $(".right__click07").click(function() {
+        $(".frameModal07").fadeIn(300);
+    });
+
+    $(".modal1__close").click(function() {
+        $(".frameModal07").fadeOut(300);
+    });
+    // 08
+    $(".right__click08").click(function() {
+        $(".frameModal08").fadeIn(300);
+    });
+
+    $(".modal1__close").click(function() {
+        $(".frameModal08").fadeOut(300);
+    });
+    // 09
+    $(".right__click09").click(function() {
+        $(".frameModal09").fadeIn(300);
+    });
+
+    $(".modal1__close").click(function() {
+        $(".frameModal09").fadeOut(300);
+    });
+    // 10
+    $(".right__click10").click(function() {
+        $(".frameModal10").fadeIn(300);
+    });
+
+    $(".modal1__close").click(function() {
+        $(".frameModal10").fadeOut(300);
+    });
+
+    // page3
+    // 01
+    $(".right__click11").click(function() {
+        $(".frameModal11").fadeIn(300);
+    });
+
+    $(".modal2__close").click(function() {
+        $(".frameModal11").fadeOut(300);
+    });
+    // 02
+    $(".right__click12").click(function() {
+        $(".frameModal12").fadeIn(300);
+    });
+
+    $(".modal2__close").click(function() {
+        $(".frameModal12").fadeOut(300);
+    });
+    // 03
+    $(".right__click13").click(function() {
+        $(".frameModal13").fadeIn(300);
+    });
+
+    $(".modal2__close").click(function() {
+        $(".frameModal13").fadeOut(300);
+    });
+
 
 
     // Scroll Reveal
