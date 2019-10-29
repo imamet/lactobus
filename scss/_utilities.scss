@@ -323,28 +323,34 @@ a {
         font-weight: 700;
         font-family: $font_03;
         position: relative;
-        &--1 {
-            left: 34%;
-            top: -12px;
-            width: 20px;
-            position: absolute;
-            @include max-responsive($sm) {
-                left: 0%;
-            }
-        }
-        &--2 {
-            right: 34%;
-            top: -12px;
-            width: 20px;
-            position: absolute;
-            @include max-responsive($sm) {
-                right: 0%;
-            }
-        }
         @include max-responsive($sm) {
             font-size: 2em;
             margin-bottom: 15%;
             margin-top: -15%;
+            display: none;
+        }
+    }
+    &__titlemobile {
+        color: #000;
+        padding-bottom: 10%;
+        table {
+            width: 100%;
+        }
+        display: none;
+        @include max-responsive($sm) {
+            display: block;
+        }
+        &--1 {
+            width: 10%;
+        }
+        &--2 {
+            width: 80%;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1em;
+        }
+        &--3 {
+            width: 10%;
         }
     }
     &__content {
@@ -998,7 +1004,7 @@ button {
         background: #8E1A35;
         border: 3px solid #fff;
         border-radius: 50px;
-        padding: 0.3rem 2rem;
+        padding: 0.6rem 2.3rem;
         outline: none;
         cursor: pointer;
         position: relative;
@@ -1233,4 +1239,27 @@ button {
 
 .hide {
     opacity: 0 !important;
+}
+
+// 
+.tooltiptext1 {
+    visibility: hidden;
+    font-family: $font_03;
+    font-size: 1.1em;
+    width: 200px;
+    background-color: #f1d8df;
+    color: #8E1A35;
+    border-radius: 6px;
+    padding: 10px;
+    left: 0;
+    position: absolute;
+    z-index: 3;
+    line-height: 1.4em;
+    @include max-responsive($sm) {
+        display: none;
+    }
+}
+
+.tooltip1:hover .tooltiptext1 {
+    visibility: visible;
 }

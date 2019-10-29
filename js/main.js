@@ -490,6 +490,13 @@ $(document).ready(function() {
         delay: 500
     });
     //
+
+    $(".").click(function() {
+        $("p").show();
+    });
+
+
+
 });
 // Mobile Version
 if (
