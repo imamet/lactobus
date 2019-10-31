@@ -64,7 +64,7 @@ a:focus {
     color: var(--color-menu);
     font-family: var(--font-family-menu);
     font-size: var(--font-size-menu);
-    font-weight: var(--font-weight-menu);
+    font-weight: bold;
     opacity: 0;
     transform: translateY(-100%);
     pointer-events: none;
