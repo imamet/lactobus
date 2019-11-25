@@ -3845,6 +3845,12 @@ button {
   padding-bottom: 9%;
 }
 
+@media (max-width: 768px) {
+  .bg6 {
+    padding-bottom: 25%;
+  }
+}
+
 .bg6__cover {
   position: absolute;
 }
@@ -4011,6 +4017,12 @@ button {
   margin-bottom: 3%;
 }
 
+@media (max-width: 768px) {
+  .bg7__foto img {
+    margin-top: -21%;
+  }
+}
+
 .bg7__name {
   font-family: "D-DIN";
   color: #fff;
@@ -4019,6 +4031,12 @@ button {
 
 .bg7__name p {
   line-height: 0.9;
+}
+
+@media (max-width: 768px) {
+  .bg7__name {
+    padding-bottom: 10%;
+  }
 }
 
 .bg7__desc {
@@ -5933,6 +5951,12 @@ button {
   width: 50%;
 }
 
+@media (max-width: 768px) {
+  .testimoni__item1 {
+    left: -15px;
+  }
+}
+
 .testimoni__item2 {
   position: absolute;
   bottom: 5%;
@@ -5949,6 +5973,13 @@ button {
 
 .testimoni__foto img {
   margin-top: -10%;
+}
+
+@media (max-width: 768px) {
+  .testimoni__foto img {
+    margin-top: -15%;
+    width: 160px;
+  }
 }
 
 .testimoni__desc {
@@ -7304,6 +7335,12 @@ button {
   margin-left: 10%;
 }
 
+@media (max-width: 768px) {
+  .section8 {
+    margin-bottom: 20%;
+  }
+}
+
 .section8__content {
   padding-bottom: 10%;
 }
@@ -7711,8 +7748,20 @@ button {
   border-top: 3px solid #8E1A35;
 }
 
+@media (max-width: 768px) {
+  .section9 {
+    margin-bottom: 20%;
+  }
+}
+
 .section9__foto img {
   margin-top: -7%;
+}
+
+@media (max-width: 768px) {
+  .section9__foto img {
+    margin-top: -23%;
+  }
 }
 
 .section9__name {
@@ -7751,7 +7800,7 @@ button {
 
 @media (max-width: 768px) {
   .section9__desc--2 {
-    bottom: -2%;
+    bottom: -20%;
     width: 50px;
   }
 }
