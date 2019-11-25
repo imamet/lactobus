@@ -104,7 +104,7 @@ class ShapeOverlays {
 
 (function() {
     const elmHamburger = document.querySelector('.hamburger');
-    const gNavItems = document.querySelectorAll('.global-menu__item');
+    const gNavItems = document.querySelectorAll('.global-menu__item, .global-menu__item1');
     const elmOverlay = document.querySelector('.shape-overlays');
     const overlay = new ShapeOverlays(elmOverlay);
 

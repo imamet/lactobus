@@ -3124,7 +3124,7 @@ button {
 }
 
 .cover__bgmobile__title--item1 img {
-  width: 270px;
+  width: 235px;
   max-width: 100%;
 }
 
@@ -3163,7 +3163,7 @@ button {
   left: 4%;
   font-size: 62px;
   color: #333333;
-  font-size: 2.5em;
+  font-size: 2.2em;
 }
 
 .cover__bgmobile__title--title1 p {
@@ -4895,7 +4895,8 @@ button {
 
 @media (max-width: 768px) {
   .bgdoc4 {
-    height: 700px;
+    height: auto;
+    padding-bottom: 25px;
   }
 }
 
@@ -4971,33 +4972,21 @@ button {
 }
 
 .bgdoc4__title--item3 {
-  margin-left: 38%;
   right: 0;
+  left: 0;
+  margin: auto;
   text-align: center;
   color: #7C1315;
   font-size: 1.7em;
-  font-weight: 1000;
-  float: left;
-}
-
-@media (max-width: 768px) {
-  .bgdoc4__title--item3 {
-    margin-left: 17%;
-  }
 }
 
 .bgdoc4__title--item3 img {
-  width: 40%;
+  width: 200px;
 }
 
 .bgdoc4__title--item4 {
   text-align: center;
-  padding-top: 20%;
-}
-
-.bgdoc4__title--item4 {
-  text-align: center;
-  padding-top: 20%;
+  padding-top: 50px;
 }
 
 .bgdoc5__content {
@@ -7864,9 +7853,56 @@ button {
   }
 }
 
+.section12__produc--1 img {
+  margin-right: -30px;
+}
+
+.section12__produc--2 img {
+  margin-right: -15px;
+}
+
+.section12__produc--4 img {
+  width: 100px;
+}
+
+.section12__produc--16 img {
+  margin-left: -25px;
+}
+
+.section12__produc table {
+  width: 100%;
+}
+
+.section12__produc table td {
+  width: 6.25%;
+}
+
+.section12__produc table td img:hover {
+  -webkit-box-shadow: 0px 15px 10px -15px #111;
+          box-shadow: 0px 15px 10px -15px #111;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
 .section12__producmobile {
   display: none;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.section12__producmobile table {
   width: 100%;
+}
+
+.section12__producmobile table td {
+  width: 6.25%;
+}
+
+.section12__producmobile table td img:hover {
+  -webkit-box-shadow: 0px 15px 10px -15px #111;
+          box-shadow: 0px 15px 10px -15px #111;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -7888,12 +7924,44 @@ button {
 
 .section12__brand {
   text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 @media (max-width: 768px) {
   .section12__brand {
     border-bottom: none;
   }
+}
+
+@media (max-width: 768px) {
+  .section12__brand {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
+.section12__brand table {
+  width: 100%;
+}
+
+.section12__brand table td {
+  width: 16.7%;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .section12__brand table td {
+    padding: 5px;
+  }
+}
+
+.section12__brand table td img:hover {
+  margin-top: -15px;
+  -webkit-box-shadow: 0px 15px 10px -15px #111;
+          box-shadow: 0px 15px 10px -15px #111;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .section12__logo {
