@@ -5357,7 +5357,7 @@ button {
 
 @media (max-width: 768px) {
   .bgdoc6__mid::after {
-    top: -55px;
+    top: -42px;
   }
 }
 
@@ -5396,7 +5396,7 @@ button {
 
 @media (max-width: 768px) {
   .bgdoc6__right::after {
-    top: -55px;
+    top: -42px;
   }
 }
 
